@@ -1,0 +1,68 @@
+/* スキルセクション全体のコンテナ */
+.skill-section-container {
+  background-color: #0c2b30; /* 背景色 */
+  border: 3px solid #6fffd2;  /* 枠線 */
+  padding: 2rem 3rem;         /* 内側の余白 */
+  width: 400px;               /* 横幅 */
+  font-family: sans-serif;    /* フォント */
+
+  /* 画像の角が欠けたデザインを再現 */
+  clip-path: polygon(
+    0% 15px, 15px 0%, /* 左上 */
+    calc(100% - 15px) 0%, 100% 15px, /* 右上 */
+    100% 100%, 0% 100% /* 右下と左下 */
+  );
+}
+
+/* 「SKILL」というタイトル */
+.skill-title {
+  color: #6fffd2;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.2em; /* 文字間隔 */
+  margin: 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #6fffd2; /* 下線 */
+}
+
+/* スキル全体のリスト */
+.skill-list {
+  margin-top: 2rem;
+}
+
+/* 各スキル（行） */
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  color: #6fffd2;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* スキル名 */
+.skill-name {
+  width: 120px; /* 名前の部分の幅を固定して揃える */
+  flex-shrink: 0; /* 幅が縮まないようにする */
+}
+
+/* スキルバーの外枠 */
+.skill-bar-wrapper {
+  flex-grow: 1; /* 残りの幅をすべて埋める */
+  height: 12px;
+  background-color: #061a1d; /* バーの背景色 */
+  margin: 0 1rem;
+}
+
+/* スキルバー本体 */
+.skill-bar {
+  height: 100%;
+  background-color: #6fffd2; /* バーの色 */
+}
+
+/* レベルの数字 */
+.skill-level {
+  width: 25px; /* 数字部分の幅を固定 */
+  text-align: right;
+  flex-shrink: 0;
+}
