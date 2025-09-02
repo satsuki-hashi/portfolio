@@ -1,0 +1,30 @@
+/* プロフィールセクション全体のコンテナ */
+.profile-container {
+  background-color: #0c2b30; /* 背景色 */
+  border: 3px solid #6fffd2;  /* 枠線 */
+  padding: 1.5rem 2rem;
+  width: 300px;
+  color: #6fffd2;
+  font-family: sans-serif;
+
+  /* 斜めにカットされたデザインをclip-pathで再現 */
+  clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 85%);
+}
+
+/* 「プロフィール」というタイトル */
+.profile-title {
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+
+/* アイコンを横に並べるためのコンテナ */
+.profile-icons {
+  display: flex;
+  justify-content: center; /* アイコンを中央揃え */
+  gap: 2rem; /* アイコン同士の間隔 */
+  border-top: 2px solid #6fffd2; /* タイトルの下の線 */
+  padding-top: 1.5rem;
+}

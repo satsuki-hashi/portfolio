@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Skills from './Skills';
+import Profile from './Profile';
 
 function App() {
   return (
@@ -8,8 +9,7 @@ function App() {
       {/* portfolio-contentで各要素をまとめる */}
       <div className="portfolio-content">
         {/* ここに将来プロフィールコンポーネントなどを追加していく */}
-        <Skills />
-        <Skills />
+        <Profile /> 
         <Skills />
       </div>
     </div>
