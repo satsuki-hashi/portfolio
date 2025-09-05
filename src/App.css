@@ -4,15 +4,18 @@ body {
   background-image: url('./assets/backImage.png');
   background-color: #009791; /* 画像が読み込めない場合の背景色 */
   background-repeat: no-repeat;
+
+
   
   /* 画像の位置を調整（右端から2%、上から10%の位置） */
-  background-position: right 0vw top 0vh;
+  /* background-position: right 0vw top 0vh; */
   
   /* 画像のサイズを固定（高さをビューポートの80%に固定し、幅はアスペクト比を維持） */
   background-size: auto 100vh; 
   
-  /* ★★★ これが最重要！背景をビューポートに固定します ★★★ */
+  /* 背景をビューポートに固定 */
   background-attachment: fixed; 
+  
 }
 
 .App {
@@ -20,7 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* .Appの背景色は透明にして、bodyの背景が見えるようにします */
+  /* .Appの背景色は透明にして、bodyの背景が見えるように */
   background-color: transparent;
   /* コンテンツが増えた時に上下の余白を確保 */
   padding: 4rem 0;

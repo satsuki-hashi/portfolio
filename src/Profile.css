@@ -20,11 +20,10 @@
   padding-bottom: 1.5rem;
 }
 
-/* アイコンを横に並べるためのコンテナ */
-.profile-icons {
-  display: flex;
-  justify-content: center; /* アイコンを中央揃え */
-  gap: 2rem; /* アイコン同士の間隔 */
-  border-top: 2px solid #6fffd2; /* タイトルの下の線 */
-  padding-top: 1.5rem;
+.profile-item {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #6fffd2;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
